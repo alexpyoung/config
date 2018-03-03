@@ -20,9 +20,9 @@ guardMasterBranch() {
 
 guardMasterBranch ./
 
-git fetch origin master
+git stash
+git fetch origin
 git rebase origin master
+git stash pop
 git commit -am "Update Sublime config"
 git push origin master
-
-echo "Sublime config updated."
