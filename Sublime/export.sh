@@ -28,5 +28,5 @@ git fetch origin
 git rebase origin master
 git stash pop
 git add .
-git commit -m "Update Sublime config"
+git commit -m "feat(Sublime): update config"
 git push origin master
