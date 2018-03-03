@@ -1,17 +1,23 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]
-then targetPath=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-else targetPath=$1
-fi
+clean() {
+    rm *.sublime-settings
+    rm *.sublime-keymap
+}
 
-rootPath=$(pwd)
+clone() {
+    if [ $# -eq 0 ]
+    then targetPath=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    else targetPath=$1
+    fi
+    rootPath=$(pwd)
+    cd "${targetPath}"
+    cp *.sublime-settings "${rootPath}"
+    cp *.sublime-keymap "${rootPath}"
+    cd "${rootPath}"
+}
 
-cd "${targetPath}"
-cp *.sublime-settings "${rootPath}"
-cp *.sublime-keymap "${rootPath}"
-
-guardMasterBranch() {
+guard_master() {
     currentBranch=$(git branch | sed -n '/\* /s///p')
     if [ "$currentBranch" != "master" ]
     then
@@ -20,13 +26,17 @@ guardMasterBranch() {
     fi
 }
 
-cd "${rootPath}"
-guardMasterBranch ./
+commit() {
+    git stash
+    git fetch origin
+    git rebase origin master
+    git stash pop
+    git add .
+    git commit -m "feat(Sublime): update config"
+    git push origin master
+}
 
-git stash
-git fetch origin
-git rebase origin master
-git stash pop
-git add .
-git commit -m "feat(Sublime): update config"
-git push origin master
+guard_master ./
+clean
+clone
+commit
