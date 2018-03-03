@@ -1,13 +1,15 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]
-then rootPath=~/Library/Application Support/Sublime Text 3/Packages/User
-else rootPath=$1
+then targetPath=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+else targetPath=$1
 fi
 
-cd rootPath
-cp *.sublime-settings ./
-cp *.sublime-keymap ./
+rootPath = $(pwd)
+
+cd "${targetPath}"
+cp *.sublime-settings "${rootPath}"
+cp *.sublime-keymap "${rootPath}"
 
 guardMasterBranch() {
     currentBranch=$(git branch | sed -n '/\* /s///p')
@@ -18,6 +20,7 @@ guardMasterBranch() {
     fi
 }
 
+cd "${rootPath}"
 guardMasterBranch ./
 
 git stash
