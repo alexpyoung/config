@@ -11,10 +11,10 @@ clone() {
     else targetPath=$1
     fi
     rootPath=$(pwd)
-    cd "${targetPath}"
-    cp *.sublime-settings "${rootPath}"
-    cp *.sublime-keymap "${rootPath}"
-    cd "${rootPath}"
+    cd "$targetPath"
+    cp *.sublime-settings "$rootPath"
+    cp *.sublime-keymap "$rootPath"
+    cd "$rootPath"
 }
 
 guard_master() {
@@ -37,6 +37,10 @@ commit() {
 }
 
 guard_master ./
+pwd=$(pwd)
+# Run from root dir
+cd ./Sublime
 clean
 clone
 commit
+cd "$pwd"
