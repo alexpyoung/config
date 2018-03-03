@@ -5,7 +5,7 @@ then targetPath=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/Use
 else targetPath=$1
 fi
 
-rootPath = $(pwd)
+rootPath=$(pwd)
 
 cd "${targetPath}"
 cp *.sublime-settings "${rootPath}"
