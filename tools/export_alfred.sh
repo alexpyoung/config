@@ -1,19 +1,17 @@
 #!/bin/bash
 
 clean() {
-    rm *.sublime-settings
-    rm *.sublime-keymap
+    rm -r *.alfredpreferences
 }
 
 clone() {
     if [ $# -eq 0 ]
-    then target_path=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    then target_path=$HOME/Library/Application\ Support/Alfred\ 3/
     else target_path=$1
     fi
     root_path=$(pwd)
     cd "$target_path"
-    cp *.sublime-settings "$root_path"
-    cp *.sublime-keymap "$root_path"
+    cp -R *.alfredpreferences "$root_path"
     cd "$root_path"
 }
 
@@ -32,14 +30,14 @@ commit() {
     git rebase origin master
     git stash pop
     git add .
-    git commit -m "feat(Sublime): update config"
+    git commit -m "feat(Alfred): update config"
     git push origin master
 }
 
 guard_master ./
 pwd=$(pwd)
 # Run from root dir
-cd ./Sublime
+cd ./Alfred
 clean
 clone
 commit
