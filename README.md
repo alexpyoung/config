@@ -1,5 +1,6 @@
 # Config
 Configurations for this and that
 
-- [Sublime Text 3](https://www.sublimetext.com/)
+- [Alfred](https://www.alfredapp.com/)
+- [Sublime Text](https://www.sublimetext.com/)
 - [zsh](http://zsh.sourceforge.net/)
