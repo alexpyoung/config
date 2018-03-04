@@ -7,19 +7,19 @@ clean() {
 
 clone() {
     if [ $# -eq 0 ]
-    then targetPath=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-    else targetPath=$1
+    then target_path=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    else target_path=$1
     fi
-    rootPath=$(pwd)
-    cd "$targetPath"
-    cp *.sublime-settings "$rootPath"
-    cp *.sublime-keymap "$rootPath"
-    cd "$rootPath"
+    root_path=$(pwd)
+    cd "$target_path"
+    cp *.sublime-settings "$root_path"
+    cp *.sublime-keymap "$root_path"
+    cd "$root_path"
 }
 
 guard_master() {
-    currentBranch=$(git branch | sed -n '/\* /s///p')
-    if [ "$currentBranch" != "master" ]
+    current_branch=$(git branch | sed -n '/\* /s///p')
+    if [ "$current_branch" != "master" ]
     then
         echo "$1 is not on master. $1 needs to be on master to run this script."
         exit 1
@@ -32,7 +32,7 @@ commit() {
     git rebase origin master
     git stash pop
     git add .
-    git commit -m "feat(Sublime): update config"
+    git commit -m "feat(sublime): update config"
     git push origin master
 }
 
