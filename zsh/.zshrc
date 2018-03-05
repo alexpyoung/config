@@ -6,22 +6,24 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="spaceship"
 
 plugins=(
+  colored-man-pages
+  gamechanger
   git
+  ssh
+  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # ORDER
 SPACESHIP_PROMPT_ORDER=(
-  time     #
-  vi_mode  # these sections will be
-  user     # before prompt char
-  host     #
   char
+  time
+  battery
   dir
   node
-  ruby
   swift
+  ruby
   line_sep
   char
   git
@@ -29,16 +31,14 @@ SPACESHIP_PROMPT_ORDER=(
 
 #PROMPT
 SPACESHIP_PROMPT_SEPARATE_LINE=true
+SPACESHIP_CHAR_SYMBOL="$"
+SPACESHIP_CHAR_SUFFIX=" "
 
-# USER
-SPACESHIP_USER_PREFIX="" # remove `with` before username
-SPACESHIP_USER_SUFFIX="" # remove space before host
-
-# HOST
-# Result will look like this:
-#   username@:(hostname)
-SPACESHIP_HOST_PREFIX="@:("
-SPACESHIP_HOST_SUFFIX=") "
+# TIME
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_PREFIX=""
+SPACESHIP_TIME_COLOR=white
+SPACESHIP_TIME_12HR=true
 
 # DIR
 SPACESHIP_DIR_TRUNC_REPO=false
