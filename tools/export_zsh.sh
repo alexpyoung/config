@@ -5,10 +5,6 @@ clean() {
 }
 
 clone() {
-    if [ $# -eq 0 ]
-    then target_path=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-    else target_path=$1
-    fi
     root_path=$(pwd)
     cp $HOME/.zshrc "$root_path"
 }
