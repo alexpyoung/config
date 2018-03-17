@@ -9,10 +9,13 @@ export NVM_LAZY_LOAD=true
 
 plugins=(
   colored-man-pages
-  gamechanger
+  dirhistory
   git
   nvm
+  sublime
+  web-search
   zsh_reload
+  gamechanger
   apy-tools
 )
 

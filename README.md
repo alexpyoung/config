@@ -6,6 +6,4 @@ Configurations for this and that
 - [zsh](http://zsh.sourceforge.net/)
 
 ### Other dependencies
-- nvm
-- Sublime CLI
 - Github Desktop CLI
