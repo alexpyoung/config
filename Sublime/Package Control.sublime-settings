@@ -9,13 +9,18 @@
 		"BracketHighlighter",
 		"Expand Tabs on Save",
 		"Git blame",
+		"Hooks",
 		"Local History",
+		"Mongoose CoffeeScript",
 		"Package Control",
 		"Pretty JSON",
 		"Seti_UI",
+		"SublimeLinter",
+		"SublimeLinter-contrib-tslint",
 		"Swift",
 		"Terminal",
 		"Theme - Brogrammer",
+		"TypeScript",
 		"TypeScript Syntax"
 	]
 }

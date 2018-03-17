@@ -1,4 +1,5 @@
 [
     { "keys": ["super+alt+enter"], "command": "goto_definition" },
-    { "keys": ["super+\\"], "command": "toggle_side_bar" }
+    { "keys": ["super+\\"], "command": "toggle_side_bar" },
+    { "keys": ["super+alt+shift+enter"], "command": "new_pane"},
 ]
