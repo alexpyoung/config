@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 clean() {
     rm *.sublime-settings
@@ -11,36 +11,18 @@ clone() {
     else target_path=$1
     fi
     root_path=$(pwd)
-    cd "$target_path"
-    cp *.sublime-settings "$root_path"
-    cp *.sublime-keymap "$root_path"
-    cd "$root_path"
+    cd $target_path
+    cp *.sublime-settings $root_path
+    cp *.sublime-keymap $root_path
+    cd $root_path
 }
 
-guard_master() {
-    current_branch=$(git branch | sed -n '/\* /s///p')
-    if [ "$current_branch" != "master" ]
-    then
-        echo "$1 is not on master. $1 needs to be on master to run this script."
-        exit 1
-    fi
-}
-
-commit() {
-    git stash
-    git fetch origin
-    git rebase origin master
-    git stash pop
-    git add .
-    git commit -m "feat(Sublime): update config"
-    git push origin master
-}
-
-guard_master ./
-pwd=$(pwd)
+source ./tools/git.sh
+guard_master_branch ./
+cwd=$(pwd)
 # Run from root dir
 cd ./Sublime
 clean
 clone
-commit
-cd "$pwd"
+commit 'Sublime'
+cd $cwd
