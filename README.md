@@ -5,5 +5,8 @@ Configurations for this and that
 - [Sublime Text](https://www.sublimetext.com/)
 - [zsh](http://zsh.sourceforge.net/)
 
-### Other dependencies
+## Other dependencies
 - Github Desktop CLI
+
+## Resources
+- [Colors codes for xterm 256 compatible emulators](https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg)
