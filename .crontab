@@ -1,2 +1,4 @@
-PATH=$PATH:/usr/local/bin/
-0 0 * * * brew update && brew upgrade && brew cask upgrade
+PATH=/Users/alex/.rvm/gems/ruby-2.2.3/bin:/Users/alex/.rvm/gems/ruby-2.2.3@global/bin:/Users/alex/.rvm/rubies/ruby-2.2.3/bin:/Users/alex/.nvm/versions/node/v4.6.0/bin:/Users/alex/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/alex/.rvm/bin
+ 0 14 * * * brew update && brew upgrade && brew cask upgrade
+ 0 14 * * * rm -f "$HOME"/Desktop/Screen\ Shot* "$HOME"/Downloads/*.gif "$HOME"/Downloads/*.mkv "$HOME"/Downloads/*.mp4 "$HOME"/Downloads/*.dmg
+
