@@ -6,17 +6,24 @@ clean() {
 }
 
 clone() {
-    cp "$HOME"/."$1" ./
+    local -r FILENAME="$1"
+    cp "$HOME"/."$FILENAME" ./
 }
 
 main() {
-    source ./tools/git.sh
+    pushd "${0%/*}" || exit 1
+    source ./git.sh
+    pushd .. || exit 1
     guard_master_branch ./
     local -r FILENAME="$1"
-    # Run from root dir
     clean "$FILENAME"
     clone "$FILENAME"
     commit "$FILENAME"
+    popd && popd || exit 1
 }
 
+if [ $# -eq 0 ]; then
+    echo 'File name is required. E.g. zshrc, vimrc'
+    exit 1
+fi
 main "$1"
