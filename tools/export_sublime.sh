@@ -7,7 +7,7 @@ clean() {
 
 clone() {
     local -r DESTINATION=$(pwd)
-    local -r TARGET="$HOME"/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+    local -r TARGET=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
     cp "$TARGET"/*.sublime-settings "$DESTINATION"
     cp "$TARGET"/*.sublime-keymap "$DESTINATION"
 }

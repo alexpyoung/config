@@ -7,7 +7,7 @@ clean() {
 
 clone() {
     local -r FILENAME="$1"
-    cp "$HOME"/."$FILENAME" ./
+    cp ~/."$FILENAME" ./
 }
 
 main() {

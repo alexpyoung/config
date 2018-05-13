@@ -5,7 +5,7 @@ clean() {
 }
 
 clone() {
-    cp -r "$HOME"/Library/Application\ Support/Alfred\ 3/*.alfredpreferences ./
+    cp -r ~/Library/Application\ Support/Alfred\ 3/*.alfredpreferences ./
 }
 
 main() {

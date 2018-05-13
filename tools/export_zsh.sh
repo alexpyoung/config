@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 clone() {
-    cp "$HOME"/.zshrc ./
-    local -r PLUGINS_DIR="$HOME"/.oh-my-zsh/custom/plugins
+    cp ~/.zshrc ./
+    local -r PLUGINS_DIR=~/.oh-my-zsh/custom/plugins
     cp "$PLUGINS_DIR"/apy-tools/apy-tools.plugin.zsh ./
     cp "$PLUGINS_DIR"/gamechanger/gamechanger.plugin.zsh ./
 }
