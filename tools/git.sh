@@ -12,11 +12,17 @@ guard_master_branch() {
 
 commit() {
     local -r GROUP_NAME=$1
-    git stash
     git fetch origin
-    git rebase origin master
-    git stash pop
+    DIFF_OUTPUT="$(git --no-pager diff --stat)"
+    if [ -n "$DIFF_OUTPUT" ]; then
+        git stash
+        git rebase origin master
+        git stash pop
+    else
+        git rebase origin master
+    fi
     git add .
     git commit -m "feat($GROUP_NAME): update config"
     git push origin master
 }
+
