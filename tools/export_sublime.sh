@@ -1,28 +1,27 @@
 #!/usr/bin/env bash
 
 clean() {
+    local -r DESTINATION=$1
+    pushd "$DESTINATION" || exit 1
     rm *.sublime-settings
     rm *.sublime-keymap
+    popd
 }
 
 clone() {
-    if [ $# -eq 0 ]
-    then target_path=$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-    else target_path=$1
-    fi
-    root_path=$(pwd)
-    cd $target_path
-    cp *.sublime-settings $root_path
-    cp *.sublime-keymap $root_path
-    cd $root_path
+    pushd "$1" || exit 1
+    local -r DESTINATION=$(pwd)
+    popd
+    pushd "$HOME"/Library/Application\ Support/Sublime\ Text\ 3/Packages/User || exit 1
+    cp ./*.sublime-settings "$DESTINATION"
+    cp ./*.sublime-keymap "$DESTINATION"
+    popd || exit 1
 }
 
 source ./tools/git.sh
 guard_master_branch ./
-cwd=$(pwd)
-# Run from root dir
-cd ./Sublime
-clean
-clone
+WD=./Sublime
+clean "$WD"
+clone "$WD"
 commit 'Sublime'
-cd $cwd
+
