@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
 main() {
-    # Run from root dir
-    source ./tools/git.sh
-    guard_master_branch ./
-    rm ./Brewfile
-    brew bundle dump
+    pushd "${0%/*}" || exit 1
+    source ./git.sh
+    guard_master_branch ../
+    pushd ../ || exit 1
+    brew bundle dump --force
     commit 'Brewfile'
+    popd && popd || exit 1
 }
 
 main
