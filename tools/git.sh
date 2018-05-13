@@ -3,7 +3,7 @@
 guard_master_branch() {
     local -r WORKING_DIR=$1
     local -r CURRENT_BRANCH=$(git branch | sed -n '/\* /s///p')
-    if [ $CURRENT_BRANCH != 'master' ]
+    if [ "$CURRENT_BRANCH" != 'master' ]
     then
         echo "$WORKING_DIR is not on master. $WORKING_DIR needs to be on master to run this script."
         exit 1
