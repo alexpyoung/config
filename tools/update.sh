@@ -12,9 +12,9 @@ main() {
     sleep 5
     ./export_dotfile.sh vimrc
     sleep 5
-    ./export_dotfile.sh zshrc
-    sleep 5
     ./export_sublime.sh
+    sleep 5
+    ./export_zsh.sh
     sleep 5
     popd || exit 1
 }
