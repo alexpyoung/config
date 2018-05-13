@@ -7,6 +7,8 @@
 	[
 		"Auto Close HTML Tags",
 		"BracketHighlighter",
+		"Case Conversion",
+		"Dockerfile Syntax Highlighting",
 		"Expand Tabs on Save",
 		"Git blame",
 		"Hooks",
@@ -16,7 +18,7 @@
 		"Pretty JSON",
 		"Seti_UI",
 		"SublimeLinter",
-		"SublimeLinter-contrib-tslint",
+		"SublimeLinter-tslint",
 		"Swift",
 		"Terminal",
 		"Theme - Brogrammer",

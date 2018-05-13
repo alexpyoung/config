@@ -3,7 +3,7 @@
 	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
 	"convert_tabspaces_on_save": true,
 	"font_face": "Courier New",
-	"font_size": 14,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -26,6 +26,5 @@
 	"theme": "Seti_orig.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": true,
-	"word_wrap": true
+	"vintage_start_in_command_mode": true
 }

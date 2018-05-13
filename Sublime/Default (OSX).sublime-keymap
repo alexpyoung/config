@@ -2,4 +2,5 @@
     { "keys": ["super+alt+enter"], "command": "goto_definition" },
     { "keys": ["super+\\"], "command": "toggle_side_bar" },
     { "keys": ["super+alt+shift+enter"], "command": "new_pane"},
+    { "keys": ["super+shift+j"], "command": "reveal_in_side_bar"},
 ]
