@@ -8,6 +8,7 @@ ZSH_THEME='spaceship'
 export NVM_LAZY_LOAD=true
 
 plugins=(
+  zsh-nvm
   colored-man-pages
   git
   zsh_reload
@@ -84,5 +85,4 @@ SPACESHIP_DOCKER_COLOR=cyan
 [ -f /Users/alex/.travis/travis.sh ] && source /Users/alex/.travis/travis.sh
 
 source $ZSH/oh-my-zsh.sh
-export NVM_DIR="$HOME/.nvm" 
-. "/usr/local/opt/nvm/nvm.sh"
+
