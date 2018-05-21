@@ -23,13 +23,14 @@ alias spd='speedtest-cli'
 
 # Misc
 touch_and_sublime() {
-    touch $1 && st $1
+    touch $1 && sublime_fallthrough $1
 }
 sublime_fallthrough() {
+    local -r SUBLIME_PATH=/Applications/Sublime\ Text.app
     if [ $# -eq 0 ]; then
-        st
+        open "$SUBLIME_PATH" 
     else
-        st $1
+        open -a "$SUBLIME_PATH" "$1"
     fi
 }
 alias tsbl=touch_and_sublime

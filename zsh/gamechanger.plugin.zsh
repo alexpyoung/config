@@ -32,14 +32,14 @@ alias redshift-staging='docker-machine env dusty > /tmp/denv && source /tmp/denv
 alias papi='psql -h papi-prod.crzmm8cpdhmt.us-east-1.rds.amazonaws.com -U gamechanger papi'
 export PGPASSWORD=0Ltli9BFuvROxbgU8AqDyrJtLIDCyvOFRrpLjEHWUtfjh0ZgTt
 
-# Directory Aliases
 gc_dir_decorator() {
-    cd $HOME/gc/$1
+    cd ~/gc/$1
     echo 'Fetching origin...' && gfo
     gst 
     g --no-pager diff --stat origin/master
 }
 
+# Directory Aliases
 alias eden='gc_dir_decorator eden'
 alias odyssey='gc_dir_decorator odyssey'
 alias gclib='gc_dir_decorator gclib'
@@ -55,6 +55,3 @@ alias dusty-specs='gc_dir_decorator dusty-specs'
 alias gcuikit='gc_dir_decorator GCUIKit'
 alias androidbats='gc_dir_decorator AndroidBats'
 alias chakra='gc_dir_decorator chakra'
-alias gc='cd $HOME/gc/'
-alias sgc='sublime $HOME/gc'
-
