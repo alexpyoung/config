@@ -8,6 +8,11 @@ alias gast='ga && git stash'
 alias gdsg='gd --staged'
 alias gdst='echo $(gd --stat) && echo $(gd --numstat)'
 alias gh='github ./'
+gpr() {
+    local -r BRANCH="$1"
+    g --no-pager diff --stat "$BRANCH"
+}
+
 alias xc='open *.xcworkspace([1])'
 alias l='ls -alF'
 alias h='history'
@@ -23,18 +28,9 @@ alias spd='speedtest-cli'
 
 # Misc
 touch_and_sublime() {
-    touch $1 && sublime_fallthrough $1
+    touch $1 && subl $1
 }
-sublime_fallthrough() {
-    local -r SUBLIME_PATH=/Applications/Sublime\ Text.app
-    if [ $# -eq 0 ]; then
-        open "$SUBLIME_PATH" 
-    else
-        open -a "$SUBLIME_PATH" "$1"
-    fi
-}
-alias tsbl=touch_and_sublime
-alias sbl=sublime_fallthrough
+alias tsubl=touch_and_sublime
 
 # fzf helpers
 
