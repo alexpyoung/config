@@ -10,12 +10,6 @@
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
-	"on_pre_save_user":
-	[
-		{
-			"command": "typescript_format_document"
-		}
-	],
 	"rulers":
 	[
 		100
