@@ -1,7 +1,14 @@
 {
 	"bold_folder_labels": true,
+	"close_sidebar_if_opened": false,
 	"color_scheme": "Packages/Theme - Brogrammer/brogrammer.tmTheme",
 	"convert_tabspaces_on_save": true,
+	"folder_exclude_patterns":
+	[
+		"node_modules",
+		"out",
+		".git"
+	],
 	"font_face": "Courier New",
 	"font_size": 13,
 	"highlight_line": true,
@@ -20,5 +27,6 @@
 	"theme": "Seti_orig.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": true
+	"vintage_start_in_command_mode": true,
+	"word_wrap": true
 }
