@@ -55,3 +55,5 @@ alias dusty-specs='gc_dir_decorator dusty-specs'
 alias gcuikit='gc_dir_decorator GCUIKit'
 alias androidbats='gc_dir_decorator AndroidBats'
 alias chakra='gc_dir_decorator chakra'
+alias boxes='gc_dir_decorator boxes'
+
