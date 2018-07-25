@@ -43,7 +43,7 @@ install_zsh() {
     popd || exit 1
 }
 
-main() {
+install_all() {
     install_homebrew
     pushd "${0%/*}" || exit 1
     pushd .. || exit 1
@@ -57,4 +57,3 @@ main() {
     popd && popd || exit 1
 }
 
-main
