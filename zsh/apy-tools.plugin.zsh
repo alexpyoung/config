@@ -16,6 +16,7 @@ gpr() {
 alias xc='open *.xcworkspace([1])'
 alias l='ls -alF'
 alias h='history'
+alias snip='pet search | pbcopy'
 
 # Tmux
 alias ta='tmux attach -t'
