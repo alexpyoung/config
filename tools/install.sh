@@ -35,11 +35,7 @@ install_zsh() {
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     source ~/.zshrc
     sleep 15
-    local -r PLUGINS_DIR=~/.oh-my-zsh/custom/plugins
-    mkdir -p "$PLUGINS_DIR"/apy-tools
-    cp ./apy-tools.plugin.zsh "$PLUGINS_DIR"/apy-tools
-    mkdir -p "$PLUGINS_DIR"/gamechanger
-    cp ./gamechanger.plugin.zsh "$PLUGINS_DIR"/gamechanger
+    cp -R ./plugins ~/.oh-my-zsh/custom/plugins/
     popd || exit 1
 }
 
