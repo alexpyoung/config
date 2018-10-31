@@ -2,9 +2,8 @@
 
 clone() {
     cp ~/.zshrc ./
-    local -r PLUGINS_DIR=~/.oh-my-zsh/custom/plugins
-    cp "$PLUGINS_DIR"/apy-tools/apy-tools.plugin.zsh ./
-    cp "$PLUGINS_DIR"/gamechanger/gamechanger.plugin.zsh ./
+    local -r PLUGINS_DIR=
+    cp -R ~/.oh-my-zsh/custom/plugins/ ./
 }
 
 main() {
