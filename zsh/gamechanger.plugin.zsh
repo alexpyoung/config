@@ -4,7 +4,7 @@ sshotgun() {
 
 # SSH Aliases
 gcssh() {
-    ssh $(awsprey list $1:$2 | head -n1) 
+    ssh $(awsprey list $1:$2 | sort -R | head -n1) 
 }
 
 alias ssh-cron='ssh $(awsprey list cron:production)'
@@ -25,8 +25,27 @@ alias dsshotgun=sshotgun
 alias evald='eval $(docker-machine env dusty)'
 
 # Redshift Aliases
-alias redshift='docker-machine env dusty > /tmp/denv && source /tmp/denv && docker run -ti --rm postgres psql -h 10.0.0.81 -p 5439 -U alex_young -d insights'
-alias redshift-staging='docker-machine env dusty > /tmp/denv && source /tmp/denv && docker run -ti --rm postgres psql -h 10.0.96.9 -p 5439 -U alex_young -d insights'
+redshift() {
+    psql() {
+        local -r IP_ADDRESS="$1"
+        docker-machine env dusty > /tmp/denv \
+            && source /tmp/denv \
+            && docker run -ti --rm postgres psql -h "$IP_ADDRESS" -p 5439 -U alex_young -d insights
+    }
+
+    local -r ENV="$1"
+    local -r STAGING_IP='10.0.96.9'
+    local -r PRODUCTION_IP='10.0.0.81'
+    if [[ "$ENV" =~ production ]]; then
+        psql "$PRODUCTION_IP" 
+    elif [[ "$ENV" =~ staging ]]; then
+        psql "$STAGING_IP"
+    else
+        echo 'Environment must be "production" or "staging"'
+    fi
+
+}
+alias redshift=redshift
 
 # PAPI Aliases
 alias papi='psql -h papi-prod.crzmm8cpdhmt.us-east-1.rds.amazonaws.com -U gamechanger papi'

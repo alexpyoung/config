@@ -3,12 +3,12 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH=$HOME/.oh-my-zsh
 
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
 ZSH_THEME='spaceship'
 
-export NVM_LAZY_LOAD=true
-
 plugins=(
-  zsh-nvm
   colored-man-pages
   git
   zsh_reload
