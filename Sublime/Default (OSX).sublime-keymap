@@ -9,6 +9,6 @@
     { "keys": ["super+shift+y"], "command": "show_panel", "args" : {"panel": "output.exec", "toggle": true} },
     { "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-    { "keys": ["super+\\", "super+\\"], "command": "focus_file_on_sidebar" },
-    { "keys": ["super+,", "super+,"], "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap", "default": "[\n\t$0\n]\n" }}
+    { "keys": ["super+shift+\\"], "command": "focus_file_on_sidebar" },
+    { "keys": ["super+shift+,"], "command": "edit_settings", "args": { "base_file": "${packages}/Default/Default ($platform).sublime-keymap", "default": "[\n\t$0\n]\n" }}
 ]
