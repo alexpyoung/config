@@ -5,7 +5,7 @@ main() {
     source ./git.sh
     pushd .. || exit 1
     guard_master_branch ./
-    sudo crontab -l > ./crontab
+    crontab -l > ./crontab
     commit 'crontab'
     popd && popd || exit 1
 }
