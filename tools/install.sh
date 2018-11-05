@@ -11,6 +11,10 @@ install_dotfiles() {
     cp ./.* ~
 }
 
+install_vim() {
+    cp -R ./vim/* ~
+}
+
 install_brews() {
     brew bundle exec -- bundle install
 }
@@ -49,6 +53,7 @@ install_all() {
     install_sublime
     install_alfred
     install_zsh
+    install_vim
     echo 'Install successful!'
     popd && popd || exit 1
 }
