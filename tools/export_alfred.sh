@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 clean() {
-    rm -r ./*.alfredpreferences
+    rm -r ./*
 }
 
 clone() {
     cp -r ~/Library/Application\ Support/Alfred\ 3/*.alfredpreferences ./
+    cp -r ~/Library/Preferences/com.runningwithcrayons.Alfred* ./Preferences/
 }
 
 main() {

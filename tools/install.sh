@@ -29,7 +29,8 @@ install_sublime() {
 }
 
 install_alfred() {
-    cp ./Alfred/* ~/Library/Application\ Support/Alfred\ 3/
+    cp ./Alfred/*.alfredpreferences ~/Library/Application\ Support/Alfred\ 3/
+    cp ./Alfred/Preferences/* ~/Library/Preferences/
 }
 
 install_zsh() {
