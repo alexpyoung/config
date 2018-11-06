@@ -13,10 +13,8 @@
     "python.linting.pylintEnabled": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
-    "vim.cursorStylePerMode": {
-        "normal": "underline",
-        "insert": "line-thin",
-    },
+    "vim.cursorStylePerMode.insert": "line-thin",
+    "vim.cursorStylePerMode.normal": "underline",
     "vim.startInInsertMode": true,
     "vim.mouseSelectionGoesIntoVisualMode": false,
     "window.title": "${activeEditorLong}${separator}${rootName}",
