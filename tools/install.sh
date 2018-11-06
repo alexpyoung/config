@@ -41,6 +41,11 @@ install_alfred() {
     cp ./Alfred/Preferences/* ~/Library/Preferences/
 }
 
+install_moom() {
+    cp -r ./Moom/Support ~/Library/Application\ Support/Many\ Tricks/
+    cp ./Moom/Preferences/* ~/Library/Preferences
+}
+
 install_zsh() {
     chsh -s /bin/zsh
     pushd ./zsh || exit 1

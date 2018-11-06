@@ -10,6 +10,7 @@ main() {
     sleep 5
     ./export_dotfile.sh tmux.conf
     sleep 5
+    ./export_moom.sh
     sleep 5
     ./export_sublime.sh
     sleep 5
