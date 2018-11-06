@@ -16,7 +16,10 @@ install_vim() {
 }
 
 install_brews() {
-    brew bundle exec -- bundle install
+    brew bundle exec -- bun<tab>dle install
+    # Thanks virtualbox
+    brew install --force virtualbox
+    brew cask install dusty
 }
 
 install_crontab() {
