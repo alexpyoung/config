@@ -10,9 +10,12 @@ main() {
     sleep 5
     ./export_dotfile.sh tmux.conf
     sleep 5
-    ./export_dotfile.sh vimrc
     sleep 5
     ./export_sublime.sh
+    sleep 5
+    ./export_vim.sh
+    sleep 5
+    ./export_vscode.sh
     sleep 5
     ./export_zsh.sh
     sleep 5
