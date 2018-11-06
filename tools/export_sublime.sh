@@ -1,15 +1,11 @@
 #!/usr/bin/env bash
 
 clean() {
-    rm ./*.sublime-settings
-    rm ./*.sublime-keymap
+    rm ./*
 }
 
 clone() {
-    local -r DESTINATION=$(pwd)
-    local -r TARGET=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-    cp "$TARGET"/*.sublime-settings "$DESTINATION"
-    cp "$TARGET"/*.sublime-keymap "$DESTINATION"
+    cp -r ~/Library/Application\ Support/Sublime\ Text\ 3/Packages ./
 }
 
 

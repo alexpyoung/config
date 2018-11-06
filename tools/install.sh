@@ -28,7 +28,7 @@ install_crontab() {
 }
 
 install_sublime() {
-    cp ./Sublime/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+    cp -r ./Sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 }
 
 install_vscode() {
