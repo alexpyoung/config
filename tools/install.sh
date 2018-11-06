@@ -28,6 +28,11 @@ install_sublime() {
     cp ./Sublime/* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 }
 
+install_vscode() {
+    cp ./VSCode/*.json ~/Library/Application\ Support/Code/User/
+    cp -r ./VSCode/.vscode ~/
+}
+
 install_alfred() {
     cp ./Alfred/*.alfredpreferences ~/Library/Application\ Support/Alfred\ 3/
     cp ./Alfred/Preferences/* ~/Library/Preferences/
@@ -57,6 +62,7 @@ install_all() {
     install_alfred
     install_zsh
     install_vim
+    install_vscode
     echo 'Install successful!'
     popd && popd || exit 1
 }

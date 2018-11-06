@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
 clean() {
-    rm ./*.json
+    rm ./*
 }
 
 clone() {
-    local -r DESTINATION=$(pwd)
-    local -r TARGET=~/Library/Application\ Support/Code/User
-    cp "$TARGET"/*.json "$DESTINATION"
+    cp ~/Library/Application\ Support/Code/User/*.json ./
+    cp -r ~/.vscode ./
 }
 
 
