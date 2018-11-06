@@ -1,0 +1,71 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="run-configuration-type">
+      <project id="AndroidBats" values="AndroidRunConfigurationType" collectionTime="1525111970947" />
+    </group>
+    <group name="module type">
+      <project id="AndroidBats" values="JAVA_MODULE" collectionTime="1525111970946" />
+    </group>
+    <group name="vcs">
+      <project id="AndroidBats" values="Git" collectionTime="1525111970938" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="AndroidBats" values="data.git.root.count.1,data.commit.count.10K+,data.users.count.50+,data.branches.count.100+" collectionTime="1525111971147" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="AndroidBats" values="AndroidJUnit" collectionTime="1525111970948" />
+    </group>
+    <group name="file-type">
+      <project id="AndroidBats" values="Kotlin,Layout Inspector,ARCHIVE,JSON,Native,Groovy,PLAIN_TEXT,IDEA_MODULE,YAML,HTML,Font,JAVA,JavaScript,Images,ProGuard File,Properties,UNKNOWN,XML,Assembly file" collectionTime="1525111971081" />
+    </group>
+    <group name="Run Dashboard">
+      <project id="AndroidBats" values="run.dashboard.disabled" collectionTime="1525111971083" />
+    </group>
+    <group name="kotlin.formatter">
+      <project id="AndroidBats" values="kotlin.formatter.kind.idea_default,kotlin.formatter.defaults.null" collectionTime="1525111971385" />
+    </group>
+    <group name="module-language-level">
+      <project id="AndroidBats" values="JDK_1_7,JDK_1_8" collectionTime="1525111971205" />
+    </group>
+    <group name="frameworks">
+      <project id="AndroidBats" values="android,java-gradle,android-gradle,kotlin-language" collectionTime="1525111970946" />
+    </group>
+    <group name="vcs-stats">
+      <project id="AndroidBats" values="unversioned.files.count.0,active.changelists.count.1,has.default.vcs.root.mapping.enabled,ignored.files.count.1,vcs.roots.count.1" collectionTime="1525111970946" />
+    </group>
+    <group name="Git">
+      <project id="AndroidBats" values="config.warn.about.detached.enabled,data.remotes.in.project.1,config.update.type.BRANCH_DEFAULT,config.force.push.enabled,version.2.14.3-UNIX,config.push.update.all.roots.enabled,config.warn.about.crlf.enabled,data.remote.branches.count.100+,config.ssh.enabled,config.save.policy.STASH,config.cherry-pick.autocommit.disabled,data.local.branches.count.15+,config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,data.remote.servers.github.com.1" collectionTime="1525111971210" />
+    </group>
+    <group name="libraries">
+      <project id="AndroidBats" values="kotlin-java-runtime" collectionTime="1525111971121" />
+    </group>
+    <group name="language-level">
+      <project id="AndroidBats" values="JDK_1_8" collectionTime="1510340038662" />
+    </group>
+    <group name="vcs-options">
+      <project id="AndroidBats" values="commit.before.reformat.project.disabled,perform.rollback.in.background.disabled,commit.clear.initial.comment.disabled,offer.move.failed.committed.do_nothing_silently,offer.move.partially.committed.disabled,changelist.make.new.active.disabled,include.text.into.shelf.enabled,perform.add_remove.in.background.enabled,commit.before.check.code.smell.enabled,perform.edit.in.background.enabled,offer.remove.empty.changelist.show_confirmation,commit.show.unversioned.enabled,commit.before.rearrange.disabled,changelist.preselect.existing.disabled,check.conflicts.in.background.disabled,commit.use.right.margin.enabled,perform.update.in.background.enabled,show.changes.preview.disabled,perform.checkout.in.background.enabled,commit.before.check.code.cleanup.disabled,commit.before.check.non.empty.comment.disabled,perform.commit.in.background.enabled,commit.before.optimize.imports.disabled,commit.before.check.todo.enabled" collectionTime="1525111970940" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="StripeButton[Android Profiler].hidden" count="1" />
+      <entry feature="StripeButton[Android Profiler].shown" count="1" />
+      <entry feature="StripeButton[Android_Profiler].hidden" count="13" />
+      <entry feature="StripeButton[Android_Profiler].shown" count="12" />
+      <entry feature="execute.AndroidJUnit.Debug" count="2" />
+      <entry feature="execute.AndroidJUnit.Run" count="23" />
+      <entry feature="execute.AndroidRunConfigurationType.Debug" count="53" />
+      <entry feature="execute.AndroidRunConfigurationType.Run" count="634" />
+      <entry feature="ide.settings.Appearance" count="3" />
+      <entry feature="ide.settings.Auto_Import" count="1" />
+      <entry feature="ide.settings.Keymap" count="15" />
+      <entry feature="ide.settings.Menus_and_Toolbars" count="1" />
+      <entry feature="ide.settings.Plugins" count="1" />
+      <entry feature="ide.settings.Scopes" count="1" />
+      <entry feature="ideaapp.started" count="158" />
+      <entry feature="terminal.mac" count="8" />
+      <entry feature="welcome.screen.WelcomeScreen.GetFromVcs" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="1" />
+    </counts>
+  </component>
+</application>

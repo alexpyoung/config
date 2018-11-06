@@ -1,0 +1,35 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="681" y="234" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="893" y="230" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="678" y="367" />
+    <location key="deploy.picker.dialog.0.0.1920.1080" x="648" y="301" />
+    <location key="deploy.picker.dialog.0.0.2560.1440" x="648" y="288" />
+    <location key="deploy.picker.dialog.0.0.1440.900" x="408" y="211" />
+    <location key="#app.0.0.1920.1080" x="468" y="56" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.0.left.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.0.center.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.0.right.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.0.bottom.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.1.left.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.1.center.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.1.right.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.1.bottom.0.0.2560.1440" width="1878" height="424" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1398" height="334" />
+    <size key="GridCell.Tab.0.left.0.0.1440.900" width="1398" height="334" />
+    <size key="GridCell.Tab.0.center.0.0.1440.900" width="1398" height="334" />
+    <size key="GridCell.Tab.0.right.0.0.1440.900" width="1398" height="334" />
+    <size key="GridCell.Tab.0.bottom.0.0.1440.900" width="1398" height="334" />
+    <size key="GridCell.Tab.1.left.0.0.1440.900" width="1398" height="334" />
+    <size key="GridCell.Tab.1.center.0.0.1440.900" width="1398" height="334" />
+    <size key="GridCell.Tab.1.right.0.0.1440.900" width="1398" height="334" />
+    <size key="GridCell.Tab.1.bottom.0.0.1440.900" width="1398" height="334" />
+  </component>
+</application>

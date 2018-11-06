@@ -1,0 +1,55 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="run-configuration-type">
+      <project id="AndroidBats" values="AndroidRunConfigurationType" collectionTime="1510340038553" />
+    </group>
+    <group name="module type">
+      <project id="AndroidBats" values="JAVA_MODULE" collectionTime="1510340038553" />
+    </group>
+    <group name="vcs">
+      <project id="AndroidBats" values="Git" collectionTime="1510340038552" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="AndroidBats" values="data.git.root.count.1,data.commit.count.10K+" collectionTime="1510340038658" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="AndroidBats" values="AndroidJUnit" collectionTime="1510340038553" />
+    </group>
+    <group name="file-type">
+      <project id="AndroidBats" values="AIDL,Groovy,HTML,ProGuard File,IDEA_MODULE,Native,UNKNOWN,Kotlin,ARCHIVE,JAVA,JavaScript,XML,Images,JSON Schema,Properties,Layout Inspector,YAML,PLAIN_TEXT" collectionTime="1510340038634" />
+    </group>
+    <group name="images.ide.background">
+      <project id="AndroidBats" values="editor=0,frame=0" collectionTime="1510340038658" />
+    </group>
+    <group name="Git">
+      <project id="AndroidBats" values="config.repo.sync.NOT_DECIDED,data.local.branches.count.15+,config.force.push.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.push.autoupdate.disabled,data.remote.branches.count.100+,config.save.policy.STASH,config.warn.about.crlf.enabled,data.remotes.in.project.1,config.push.update.all.roots.enabled" collectionTime="1510340038663" />
+    </group>
+    <group name="libraries">
+      <project id="AndroidBats" values="kotlin-java-runtime" collectionTime="1510340038648" />
+    </group>
+    <group name="frameworks">
+      <project id="AndroidBats" values="java-gradle,kotlin-language,android,android-gradle" collectionTime="1510340038553" />
+    </group>
+    <group name="language-level">
+      <project id="AndroidBats" values="JDK_1_8" collectionTime="1510340038662" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="execute.AndroidJUnit.Debug" count="2" />
+      <entry feature="execute.AndroidJUnit.Run" count="23" />
+      <entry feature="execute.AndroidRunConfigurationType.Debug" count="41" />
+      <entry feature="execute.AndroidRunConfigurationType.Run" count="606" />
+      <entry feature="ide.settings.Appearance" count="3" />
+      <entry feature="ide.settings.Auto_Import" count="1" />
+      <entry feature="ide.settings.Keymap" count="15" />
+      <entry feature="ide.settings.Menus_and_Toolbars" count="1" />
+      <entry feature="ide.settings.Plugins" count="1" />
+      <entry feature="ide.settings.Scopes" count="1" />
+      <entry feature="ideaapp.started" count="125" />
+      <entry feature="terminal.mac" count="7" />
+      <entry feature="welcome.screen.WelcomeScreen.GetFromVcs" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="1" />
+    </counts>
+  </component>
+</application>

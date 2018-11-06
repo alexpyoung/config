@@ -1,0 +1,40 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>onRunnerUpdateResolved</find>
+      <find>onResolved</find>
+      <find>back</find>
+      <find>remainedOnLastPlayEvent</find>
+      <find>currenthandler</find>
+      <find>fielderschoice</find>
+      <find>animate</find>
+      <find>an</find>
+      <find>baseRunnerUIUpdateSubject</find>
+      <find>createBatterOutHandler</find>
+      <find>onrunnerupdateresolved</find>
+      <find>baserunnring</find>
+      <find>eventsNotMaking3rdOut</find>
+      <find>onPendingRunnersResolved</find>
+      <find>eventsFromRunners</find>
+      <find>battersafehandler</find>
+      <find>BABIP</find>
+      <find>BA&quot;</find>
+      <find>Batting average</find>
+      <find>SO</find>
+      <find>SO&quot;</find>
+      <find>K&quot;</find>
+      <find>&quot;K&quot;</find>
+      <find>&quot;HARD</find>
+      <find>forEach</find>
+      <find>didNotScoreEvent</find>
+      <find>REMAININGOUTS</find>
+      <find>Howton</find>
+      <find>baserunning</find>
+      <find>tostring</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>presenter.timer</replace>
+      <replace>v</replace>
+    </replaceStrings>
+  </component>
+</application>

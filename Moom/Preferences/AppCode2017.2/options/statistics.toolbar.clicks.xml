@@ -1,0 +1,15 @@
+<application>
+  <component name="ToolbarClicksCollector">
+    <counts>
+      <entry action="Debug@NavBarToolbar" count="6" />
+      <entry action="Resume@DebuggerToolbar" count="22" />
+      <entry action="Run@NavBarToolbar" count="3" />
+      <entry action="Stop@DebuggerToolbar" count="1" />
+      <entry action="Stop@NavBarToolbar" count="2" />
+      <entry action="XDebugger.MuteBreakpoints@DebuggerToolbar" count="9" />
+      <entry action="com.intellij.application.options.schemes.AbstractSchemesPanel$ShowSchemesActionsListAction@NavBarToolbar" count="2" />
+      <entry action="com.intellij.ide.util.gotoByName.ChooseByNameBase$1@ChooseByNameBase" count="1" />
+      <entry action="com.intellij.ide.util.gotoByName.ChooseByNameFilter$FilterAction@gotfile.filter" count="1" />
+    </counts>
+  </component>
+</application>
