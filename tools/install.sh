@@ -2,7 +2,7 @@
 
 install_homebrew() {
     pushd /usr/local || exit 1
-    mkdir homebrew
+    sudo mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     popd || exit 1
 }
@@ -12,7 +12,7 @@ install_dotfiles() {
 }
 
 install_vim() {
-    cp -R ./vim/* ~
+    cp -r ./vim/*. ~
 }
 
 install_brews() {
