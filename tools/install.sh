@@ -17,7 +17,7 @@ install_vim() {
 }
 
 install_brews() {
-    brew bundle exec -- bun<tab>dle install
+    brew bundle exec -- bundle install
     # Thanks virtualbox
     brew install --force virtualbox
     brew cask install dusty
