@@ -6,6 +6,7 @@ clean() {
 
 clone() {
     cp -r ~/Library/Application\ Support/Alfred\ 3/*.alfredpreferences ./
+    mkdir -p ./Preferences
     cp -r ~/Library/Preferences/com.runningwithcrayons.Alfred* ./Preferences/
 }
 
