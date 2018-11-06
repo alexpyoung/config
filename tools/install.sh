@@ -3,7 +3,8 @@
 install_homebrew() {
     pushd /usr/local || exit 1
     sudo mkdir homebrew
-    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+    sudo chown -R $(id -un):admin ./homebrew
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     popd || exit 1
 }
 
