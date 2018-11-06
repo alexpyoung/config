@@ -6,7 +6,7 @@ clone() {
     mkdir -p ./Support
     cp -r ~/Library/Application\ Support/Many\ Tricks/ ./Support
     mkdir -p ./Preferences
-    cp -r ~/Library/Preferences/* ./Preferences
+    cp ~/Library/Preferences/com.manytricks.Moom.plist ./Preferences
 }
 
 main() {

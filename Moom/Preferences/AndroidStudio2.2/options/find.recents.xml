@@ -1,8 +1,0 @@
-<application>
-  <component name="FindRecents">
-    <findStrings>
-      <find>staging</find>
-      <find>STAGING</find>
-    </findStrings>
-  </component>
-</application>
