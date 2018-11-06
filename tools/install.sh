@@ -29,7 +29,9 @@ install_crontab() {
 }
 
 install_sublime() {
-    cp -r ./Sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+    local -r TARGET=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+    mkdir -p "$TARGET"
+    cp -r ./Sublime/ "$TARGET"
 }
 
 install_vscode() {
