@@ -35,22 +35,27 @@ install_sublime() {
 }
 
 install_vscode() {
-    cp ./VSCode/*.json ~/Library/Application\ Support/Code/User/
+    local -r TARGET=~/Library/Application\ Support/Code/User/
+    mkdir -p "$TARGET"
+    cp ./VSCode/*.json "$TARGET"
     cp -r ./VSCode/.vscode ~/
 }
 
 install_alfred() {
-    cp ./Alfred/*.alfredpreferences ~/Library/Application\ Support/Alfred\ 3/
+    local -r TARGET=~/Library/Application\ Support/Alfred\ 3/
+    mkdir -p "$TARGET"
+    cp -r ./Alfred/*.alfredpreferences "$TARGET"
     cp ./Alfred/Preferences/* ~/Library/Preferences/
 }
 
 install_moom() {
-    cp -r ./Moom/Support ~/Library/Application\ Support/Many\ Tricks/
+    local -r TARGET=~/Library/Application\ Support/Many\ Tricks/
+    mkdir -p "$TARGET"
+    cp -r ./Moom/Support "$TARGET"
     cp ./Moom/Preferences/* ~/Library/Preferences
 }
 
 install_zsh() {
-    chsh -s /bin/zsh
     pushd ./zsh || exit 1
     cp ./.zshrc ~/
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -75,6 +80,7 @@ install_all() {
     install_vim
     install_vscode
     echo 'Install successful!'
+    echo 'Execute chsh -s /bin/zsh to change your default shell'
     popd && popd || exit 1
 }
 
