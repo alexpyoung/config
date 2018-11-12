@@ -58,6 +58,7 @@ install_moom() {
 install_zsh() {
     pushd ./zsh || exit 1
     cp ./.zshrc ~/
+    cp ./.zshenv ~/
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     source ~/.zshrc
     sleep 15

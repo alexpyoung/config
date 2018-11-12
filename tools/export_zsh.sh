@@ -2,6 +2,7 @@
 
 clone() {
     cp ~/.zshrc ./
+    cp ~/.zshenv ./
     local -r PLUGINS_DIR=
     cp -R ~/.oh-my-zsh/custom/plugins/ ./
 }
