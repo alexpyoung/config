@@ -1,30 +1,5 @@
 {
-	"bootstrapped": true,
 	"in_process_packages":
 	[
-	],
-	"installed_packages":
-	[
-		"Auto Close HTML Tags",
-		"BracketHighlighter",
-		"Case Conversion",
-		"Dockerfile Syntax Highlighting",
-		"Expand Tabs on Save",
-		"Focus File on Sidebar",
-		"Git blame",
-		"Hooks",
-		"Local History",
-		"MarkdownLivePreview",
-		"Mongoose CoffeeScript",
-		"Package Control",
-		"Pretty JSON",
-		"Seti_UI",
-		"SublimeLinter",
-		"SublimeLinter-tslint",
-		"Swift",
-		"Terminal",
-		"Theme - Brogrammer",
-		"TypeScript",
-		"TypeScript Syntax"
 	]
 }
