@@ -33,6 +33,16 @@ touch_and_sublime() {
 }
 alias tsubl=touch_and_sublime
 
+vs() {
+    local -r BIN=/Applications/Visual\ Studio\ Code.app
+    local -r FILE="$1"
+    if [[ -z "$FILE" ]]; then
+        open "$BIN"
+    else
+        open -a "$BIN" "$FILE"
+    fi
+}
+
 # fzf helpers
 
 # fe [FUZZY PATTERN] - Open the selected file with the default editor
