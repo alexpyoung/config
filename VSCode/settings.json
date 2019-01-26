@@ -31,4 +31,5 @@
     "workbench.startupEditor": "newUntitledFile",
     "window.zoomLevel": 0,
     "workbench.sideBar.location": "left",
+    "typescript.updateImportsOnFileMove.enabled": "always",
 }
