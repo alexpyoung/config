@@ -4,7 +4,11 @@ sshotgun() {
 
 # SSH Aliases
 gcssh() {
-    ssh $(awsprey list $1:$2 | sort -R | head -n1) 
+    if [[ $# -eq 3 ]]; then
+        ssh $(awsprey list $1:$2 | grep -i $3 | sort -R | head -n1) 
+    else
+        ssh $(awsprey list $1:$2 | sort -R | head -n1) 
+    fi
 }
 
 alias ssh-cron='ssh $(awsprey list cron:production)'
