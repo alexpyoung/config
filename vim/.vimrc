@@ -1,5 +1,6 @@
-colorscheme solarized
 syntax enable
+set background=dark
+colorscheme brogrammer
 
 set tabstop=4 " number of spaces that <Tab> in file uses
 set softtabstop=4 " number of spaces that <Tab> uses while editing
@@ -29,7 +30,7 @@ call plug#begin('~/.vim/vim-plug')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
 
-" Syntax
+" Visual
 Plug 'leafgarland/typescript-vim'
 
 call plug#end()
