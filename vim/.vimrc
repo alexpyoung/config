@@ -1,6 +1,6 @@
 syntax enable
 set background=dark
-colorscheme brogrammer
+colorscheme lucius
 
 set tabstop=4 " number of spaces that <Tab> in file uses
 set softtabstop=4 " number of spaces that <Tab> uses while editing
@@ -22,22 +22,28 @@ set clipboard=unnamed " use the clipboard as the unnamed register
 
 autocmd BufEnter * lcd %:p:h " set working directory to current file's directory
 
-" Vim Plug
+" Begin Vim Plug
 
 call plug#begin('~/.vim/vim-plug')
 
 " Functional
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'do': './install --bin' } | Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " Visual
 Plug 'leafgarland/typescript-vim'
+Plug 'rakr/vim-one'
 
 call plug#end()
 
 " NERDTree
-
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeShowHidden=1
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
+" FZF
+map <C-p> :FZF<CR>
+
+" End Vim Plug
