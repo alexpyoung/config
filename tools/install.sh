@@ -9,7 +9,7 @@ install_homebrew() {
 }
 
 install_dotfiles() {
-    cp ./.* ~
+    cp ./.tmux.conf ~
 }
 
 install_vim() {

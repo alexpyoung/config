@@ -8,7 +8,7 @@ main() {
     sleep 5
     ./export_crontab.sh
     sleep 5
-    ./export_dotfile.sh tmux.conf
+    ./export_tmux.sh
     sleep 5
     ./export_moom.sh
     sleep 5
