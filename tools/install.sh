@@ -8,11 +8,6 @@ install_vim() {
     cp -r ./vim/*. ~
 }
 
-install_crontab() {
-    pbcopy < crontab
-    echo 'crontab has been loaded into clipboard.'
-}
-
 install_alfred() {
     local -r TARGET=~/Library/Application\ Support/Alfred\ 3/
     mkdir -p "$TARGET"
