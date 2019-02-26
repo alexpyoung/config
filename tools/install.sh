@@ -53,6 +53,7 @@ install_zsh() {
     git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
     ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
     popd || exit 1
+    echo 'Execute chsh -s /bin/zsh to change your default shell'
 }
 
 install_all() {
@@ -66,7 +67,6 @@ install_all() {
     install_zsh
     install_vim
     echo 'Install successful!'
-    echo 'Execute chsh -s /bin/zsh to change your default shell'
     popd && popd || exit 1
 }
 
