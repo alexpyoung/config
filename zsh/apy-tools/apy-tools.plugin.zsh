@@ -8,6 +8,15 @@ alias gast='ga && git stash'
 alias gdsg='gd --staged'
 alias gdst='echo $(gd --stat) && echo $(gd --numstat)'
 alias gh='github ./'
+# ghst() {
+#     local -r FILENAME="$1"
+#     g log -p -- "$FILENAME"
+# }
+
+# glg() {
+#     g log --color --graph --oneline --decorate
+# }
+
 gpr() {
     local -r BRANCH="$1"
     g --no-pager diff --stat "$BRANCH"
