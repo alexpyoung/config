@@ -16,8 +16,6 @@ main() {
     sleep 5
     ./export_vim.sh
     sleep 5
-    ./export_vscode.sh
-    sleep 5
     ./export_zsh.sh
     sleep 5
     popd || exit 1

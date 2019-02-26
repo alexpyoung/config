@@ -34,13 +34,6 @@ install_sublime() {
     cp -r ./Sublime/ "$TARGET"
 }
 
-install_vscode() {
-    local -r TARGET=~/Library/Application\ Support/Code/User/
-    mkdir -p "$TARGET"
-    cp ./VSCode/*.json "$TARGET"
-    cp -r ./VSCode/.vscode ~/
-}
-
 install_alfred() {
     local -r TARGET=~/Library/Application\ Support/Alfred\ 3/
     mkdir -p "$TARGET"
@@ -79,7 +72,6 @@ install_all() {
     install_alfred
     install_zsh
     install_vim
-    install_vscode
     echo 'Install successful!'
     echo 'Execute chsh -s /bin/zsh to change your default shell'
     popd && popd || exit 1
