@@ -1,5 +1,5 @@
- 0 14 * * * brew update && brew upgrade && brew cask upgrade
- 0 14 * * * "$HOME"/config/tools/update.sh
+ 0 14 * * * brew update && brew upgrade && brew cask upgrade &>/var/log/brew.cron.log
+ 0 14 * * * "$HOME"/config/tools/update.sh &>/var/log/update.cron.log
  0 14 * * * rm -f "$HOME"/Desktop/Screen\ Shot*
  0 14 * * * pushd "$HOME"/Downloads/ && rm -rf *.gif *.mkv *.mp4 *.dmg && popd
 
