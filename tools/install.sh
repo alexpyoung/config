@@ -4,10 +4,6 @@ install_dotfiles() {
     cp ./.tmux.conf ~
 }
 
-install_vim() {
-    cp -r ./vim/*. ~
-}
-
 install_alfred() {
     local -r TARGET=~/Library/Application\ Support/Alfred\ 3/
     mkdir -p "$TARGET"
