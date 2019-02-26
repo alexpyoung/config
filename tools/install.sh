@@ -28,12 +28,6 @@ install_crontab() {
     echo 'crontab has been loaded into clipboard.'
 }
 
-install_sublime() {
-    local -r TARGET=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
-    mkdir -p "$TARGET"
-    cp -r ./Sublime/ "$TARGET"
-}
-
 install_alfred() {
     local -r TARGET=~/Library/Application\ Support/Alfred\ 3/
     mkdir -p "$TARGET"
@@ -68,7 +62,6 @@ install_all() {
     install_dotfiles
     install_brews
     install_crontab
-    install_sublime
     install_alfred
     install_zsh
     install_vim
