@@ -56,17 +56,3 @@ install_zsh() {
     echo 'Execute chsh -s /bin/zsh to change your default shell'
 }
 
-install_all() {
-    install_homebrew
-    pushd "${0%/*}" || exit 1
-    pushd .. || exit 1
-    install_dotfiles
-    install_brews
-    install_crontab
-    install_alfred
-    install_zsh
-    install_vim
-    echo 'Install successful!'
-    popd && popd || exit 1
-}
-
