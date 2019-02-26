@@ -18,17 +18,3 @@ install_moom() {
     cp ./Moom/Preferences/* ~/Library/Preferences
 }
 
-install_zsh() {
-    pushd ./zsh || exit 1
-    cp ./.zshrc ~/
-    cp ./.zshenv ~/
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    source ~/.zshrc
-    sleep 15
-    cp -R ./plugins "$ZSH_CUSTOM/plugins/"
-    git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-    ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-    popd || exit 1
-    echo 'Execute chsh -s /bin/zsh to change your default shell'
-}
-
