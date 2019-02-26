@@ -1,23 +1,11 @@
 #!/usr/bin/env bash
 
-install_homebrew() {
-    pushd /usr/local || exit 1
-    sudo mkdir homebrew
-    sudo chown -R $(id -un):admin ./homebrew
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    popd || exit 1
-}
-
 install_dotfiles() {
     cp ./.tmux.conf ~
 }
 
 install_vim() {
     cp -r ./vim/*. ~
-}
-
-install_brews() {
-    brew bundle exec -- bundle install
 }
 
 install_crontab() {
