@@ -1,7 +1,7 @@
 # Visual Studio Code
 
-## Installation
-1. Ensure the IDE itself has already been installed via homebrew
+## Download
+1. Ensure you have installed homebrew packages first
 2. `cat ./.gist > pbcopy`
 3. Install [`code-settings-sync`](https://github.com/shanalikhan/code-settings-sync)
 4. [Download settings](https://github.com/shanalikhan/code-settings-sync#download-your-settings)
