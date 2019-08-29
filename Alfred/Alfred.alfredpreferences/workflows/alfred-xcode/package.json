@@ -1,0 +1,72 @@
+{
+  "_from": "alfred-xcode",
+  "_id": "alfred-xcode@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-H4s88dnCqU1fJjSAj0OWt5yjaSGeQH5E8V1V8GGzWlRne9M8z3mxjXOGMm2tzH85K1UKbxsR3bNgeqoY+/eJAg==",
+  "_location": "/alfred-xcode",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "alfred-xcode",
+    "name": "alfred-xcode",
+    "escapedName": "alfred-xcode",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/alfred-xcode/-/alfred-xcode-2.0.0.tgz",
+  "_shasum": "49fe4eb7de0465bb9c25d52187040f7cc63623d3",
+  "_spec": "alfred-xcode",
+  "_where": "/Users/alex.young/q/mobile-testbed",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sindresorhus/alfred-xcode/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "alfy": "^0.8.0"
+  },
+  "deprecated": false,
+  "description": "Alfred 3 workflow to open Xcode projects, workspaces, and playgrounds",
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "icon.png",
+    "info.plist"
+  ],
+  "homepage": "https://github.com/sindresorhus/alfred-xcode#readme",
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy",
+    "xcode",
+    "project",
+    "projects",
+    "workspace",
+    "workspaces",
+    "xcodeproj",
+    "xcworkspace",
+    "playground",
+    "playgrounds"
+  ],
+  "license": "MIT",
+  "name": "alfred-xcode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sindresorhus/alfred-xcode.git"
+  },
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "version": "2.0.0"
+}
