@@ -6,6 +6,8 @@ export ZSH=$HOME/.oh-my-zsh
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
 
+export PAPERTRAIL_API_TOKEN=EcJHRCpMs2WJ5C5gKYq
+
 ZSH_THEME='spaceship'
 
 plugins=(
@@ -14,6 +16,7 @@ plugins=(
   zsh_reload
   gamechanger
   apy-tools
+  mbq
   zsh-syntax-highlighting
 )
 

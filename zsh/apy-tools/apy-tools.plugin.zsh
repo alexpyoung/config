@@ -22,6 +22,13 @@ gpr() {
     g --no-pager diff --stat "$BRANCH"
 }
 
+gx() {
+    git fetch origin
+    for branch in $(git --no-pager branch | grep -v master); do
+        git branch -d $branch 2>/dev/null
+    done
+}
+
 alias xc='open *.xcworkspace([1])'
 alias l='ls -alF'
 alias h='history'
@@ -35,6 +42,10 @@ alias tk9='tmux kill-server'
 alias tks='tmux kill-session -t'
 
 alias spd='speedtest-cli'
+
+# Docker
+alias dk=docker
+alias dkc=docker-compose
 
 # Misc
 touch_and_sublime() {
