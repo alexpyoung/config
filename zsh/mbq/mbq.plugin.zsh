@@ -14,8 +14,8 @@ mbqid() {
     open "https://api.managedbyq.com/admin/identity/person/$1"
 }
 
-killm() {
-    kill $(ps aux | grep "[l]aunchPackager" | cut -d' ' -f8)
+pkgr() {
+    pkill -f "launchPackager"
     ./node_modules/.bin/react-native run-ios --configuration Debug --scheme Development
 }
 
@@ -42,9 +42,8 @@ oscup() {
     grbm
     dkc build
     dkc up -d api
-    ./docker.py restart api
-    dkc up -d api
-    dkc up -d celery
+    ./docker.py resetdb
+    dkc restart api
 }
 
 cdup() {
