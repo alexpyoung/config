@@ -19,20 +19,26 @@ set hlsearch " highlight matches with last search pattern
 
 set clipboard=unnamed " use the clipboard as the unnamed register
 
-autocmd BufEnter * lcd %:p:h " set working directory to current file's directory
+set shellcmdflag=-ic " enable zshrc for terminal commands
 
-" Begin Vim Plug
+"autocmd BufEnter * lcd %:p:h " set working directory to current file's directory
+
+" Highlight statusline of active window
+hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
+hi StatusLineNC ctermfg=249 guifg=#b2b2b2 ctermbg=237 guibg=#3a3a3a cterm=none gui=none
 
 call plug#begin('~/.vim/vim-plug')
 
 " Navigation
 Plug 'scrooloose/nerdtree' 
-cnoreabbrev cdm cd ~/q/mobile-dashboard
 
 " Search
 Plug '/usr/local/opt/fzf' " Homebrew installation
 Plug 'junegunn/fzf.vim'
 Plug 'jremmen/vim-ripgrep'
+
+" Git
+Plug 'tpope/vim-fugitive'
 
 " Syntax
 Plug 'vim-scripts/SyntaxComplete'
@@ -65,4 +71,6 @@ autocmd VimEnter * call StartUp()
 " FZF
 cnoreabbrev f Files
 
-" End Vim Plug
+" Quick directories
+cnoreabbrev cd cd ~/q/
+
