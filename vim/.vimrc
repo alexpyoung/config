@@ -1,4 +1,3 @@
-syntax enable
 set background=dark
 colorscheme brogrammer
 
@@ -26,26 +25,44 @@ autocmd BufEnter * lcd %:p:h " set working directory to current file's directory
 
 call plug#begin('~/.vim/vim-plug')
 
-" Functional
-Plug 'rking/ag.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
+" Navigation
+Plug 'scrooloose/nerdtree' 
+cnoreabbrev cdm cd ~/q/mobile-dashboard
 
-" Visual
-Plug 'leafgarland/typescript-vim'
+" Search
+Plug '/usr/local/opt/fzf' " Homebrew installation
+Plug 'junegunn/fzf.vim'
+Plug 'jremmen/vim-ripgrep'
+
+" Syntax
+Plug 'vim-scripts/SyntaxComplete'
+
+" TypeScript
+Plug 'HerringtonDarkholme/yats.vim' " syntax highlighting
+Plug 'Quramy/tsuquyomi' " client for TSServer
 
 call plug#end()
 
 " NERDTree
-cnoreabbrev n NERDTreeToggle
+cnoreabbrev nt NERDTree
+cnoreabbrev ntc NERDTreeClose
+cnoreabbrev ntr NERDTreeVCS 
+
 let g:NERDTreeShowHidden=1
-let g:NERDTreeNodeDelimiter = "\u00a0"
+let g:NERDTreeNodeDelimiter="\u00a0"
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeWinSize=50
 
+function! StartUp()
+    if 0 == argc()
+        NERDTree
+    end
+endfunction
+
+" open NERDTree if vim is invoked with no file
+autocmd VimEnter * call StartUp()
+
 " FZF
-cnoreabbrev f Ag
-cnoreabbrev ff AgFile
+cnoreabbrev f Files
 
 " End Vim Plug

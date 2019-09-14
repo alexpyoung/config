@@ -1,3 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/alex.young/q/mobile-testbed'
+let g:netrw_dirhist_2='/Users/alex.young/q'
+let g:netrw_dirhist_3='/Users/alex.young/q/mobile-dashboard'
+let g:netrw_dirhist_4='/Users/alex.young/q/mobile-dashboard/src'
+let g:netrw_dirhist_5='/Users/alex.young/q/mobile-dashboard/src/ui'
+let g:netrw_dirhist_6='/Users/alex.young/q/mobile-dashboard'
+let g:netrw_dirhist_7='/Users/alex.young/q/mobile-dashboard/src'
+let g:netrw_dirhist_8='/Users/alex.young/q/mobile-dashboard/src/ui'
+let g:netrw_dirhist_9='/Users/alex.young/q/mobile-dashboard'
