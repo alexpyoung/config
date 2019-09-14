@@ -35,6 +35,7 @@ hivyup() {
     dkc up -d hivy_api
     npm run migrate
     npm run reset-db
+    dkc logs -f hivy_api
 }
 
 oscup() {
@@ -44,6 +45,7 @@ oscup() {
     dkc up -d api
     ./docker.py resetdb
     dkc restart api
+    dkc logs -f api
 }
 
 cdup() {
@@ -51,5 +53,6 @@ cdup() {
     grbm
     dkc build
     dkc up -d
+    dkc logs -f bff
 }
 

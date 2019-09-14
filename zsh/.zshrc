@@ -4,7 +4,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 
 export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
+  . "/usr/local/opt/nvm/nvm.sh" --no-use
 
 export PAPERTRAIL_API_TOKEN=EcJHRCpMs2WJ5C5gKYq
 
