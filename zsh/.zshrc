@@ -8,6 +8,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export PAPERTRAIL_API_TOKEN=EcJHRCpMs2WJ5C5gKYq
 
+export FZF_DEFAULT_COMMAND='rg --files' # Use ripgrep instead of find to respect gitignore
+
 ZSH_THEME='spaceship'
 
 plugins=(

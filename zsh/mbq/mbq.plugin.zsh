@@ -1,7 +1,14 @@
-alias mbqssh='convox apps | grep running | cut -d" " -f1 | fzf | xargs -o convox run api bash -r convox-prd -a'
 alias mbqlog='open https://papertrailapp.com/systems/`curl -s -H "X-Papertrail-Token: $PAPERTRAIL_API_TOKEN" https://papertrailapp.com/api/v1/groups.json | jq -r ".[0].systems | map(.name) | .[]" | fzf`/events'
 alias mbqtail='curl -s -H "X-Papertrail-Token: $PAPERTRAIL_API_TOKEN" https://papertrailapp.com/api/v1/groups.json | jq -r ".[0].systems | map(.name) | .[]" | fzf | xargs papertrail -f -s'
 alias cpnpm='cat ~/.npmrc | cut -d= -f2'
+
+mbqssh() {
+    local -r RACK="convox-prd"
+    local -r APP=$(convox apps -r $RACK | tail -n +2 | grep running | cut -d" " -f1 | fzf)
+    local -r SERVICE=$(convox services -r $RACK -a $APP | tail -n +2 | cut -d" " -f1 | fzf)
+    printf "%s\n" "SSHing into $APP $SERVICE..."
+    convox run $SERVICE bash -r $RACK -a $APP
+}
 
 mbq_dir_decorator() {
     cd ~/q/$1
@@ -20,6 +27,7 @@ pkgr() {
 }
 
 # Directory Aliases
+alias hivy='mbq_dir_decoratory hivy'
 alias iris='mbq_dir_decorator iris'
 alias mobile='mbq_dir_decorator mobile-dashboard'
 alias messaging='mbq_dir_decorator messaging'
