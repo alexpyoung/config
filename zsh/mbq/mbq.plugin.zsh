@@ -3,7 +3,7 @@ alias mbqtail='curl -s -H "X-Papertrail-Token: $PAPERTRAIL_API_TOKEN" https://pa
 alias cpnpm='cat ~/.npmrc | cut -d= -f2'
 
 mbqssh() {
-    local -r RACK="convox-prd"
+    local -r RACK=$(convox racks | tail -n +2 | grep running | cut -d/ -f2 | cut -d" " -f1 | fzf)
     local -r APP=$(convox apps -r $RACK | tail -n +2 | grep running | cut -d" " -f1 | fzf)
     local -r SERVICE=$(convox services -r $RACK -a $APP | tail -n +2 | cut -d" " -f1 | fzf)
     printf "%s\n" "SSHing into $APP $SERVICE..."
@@ -51,7 +51,7 @@ oscup() {
     grbm
     dkc build
     dkc up -d api
-    ./docker.py resetdb
+    mbq resetdb
     dkc restart api
     dkc logs -f api
 }

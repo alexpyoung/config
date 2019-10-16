@@ -1,7 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools/
 export ZSH=$HOME/.oh-my-zsh
+
+eval "$(pyenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh" --no-use
@@ -9,6 +12,8 @@ export NVM_DIR="$HOME/.nvm"
 export PAPERTRAIL_API_TOKEN=EcJHRCpMs2WJ5C5gKYq
 
 export FZF_DEFAULT_COMMAND='rg --files' # Use ripgrep instead of find to respect gitignore
+
+export LC_ALL=en_US.UTF-8
 
 ZSH_THEME='spaceship'
 
