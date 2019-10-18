@@ -41,8 +41,8 @@ hivyup() {
     grbm
     dkc build
     dkc up -d hivy_api
-    npm run migrate
-    npm run reset-db
+    mbq npm migrate
+    mbq npm reset-db
     dkc logs -f hivy_api
 }
 
