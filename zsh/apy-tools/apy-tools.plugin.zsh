@@ -25,7 +25,15 @@ gpr() {
 gx() {
     git fetch origin
     for branch in $(git --no-pager branch | grep -v master); do
+        echo "Attempting delete with -d"
         git branch -d $branch 2>/dev/null
+        if [[ $? -ne 0 ]]; then
+            git ls-remote --exit-code --heads origin $branch
+            if [[ $? -eq 2 ]]; then
+                echo "Force deleting"
+                git branch -D $branch
+            fi
+        fi
     done
 }
 

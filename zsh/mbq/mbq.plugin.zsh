@@ -39,6 +39,7 @@ alias ptrd='mbq_dir_decorator partner-dashboard'
 hivyup() {
     cd ~/q/hivy
     grbm
+    mbq op sync
     dkc build
     dkc up -d hivy_api
     mbq npm migrate
@@ -49,6 +50,7 @@ hivyup() {
 oscup() {
     cd ~/q/os-core
     grbm
+    mbq op sync
     dkc build
     dkc up -d api
     mbq resetdb
@@ -59,8 +61,19 @@ oscup() {
 cdup() {
     cd ~/q/client-dashboard
     grbm
+    mbq op sync
     dkc build
     dkc up -d
     dkc logs -f bff
+}
+
+irisup() {
+    cd ~/q/iris
+    grbm
+    mbq op sync
+    dkc build
+    mbq manage migrate
+    dkc up -d iris-api
+    dkc logs -f iris-api
 }
 
