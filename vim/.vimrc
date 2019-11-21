@@ -19,7 +19,7 @@ set hlsearch " highlight matches with last search pattern
 
 set clipboard=unnamed " use the clipboard as the unnamed register
 
-autocmd BufEnter * lcd %:p:h " set working directory to current file's directory
+autocmd BufWritePre * %s/\s\+$//e " trim trailing whitespace on save
 
 " Highlight statusline of active window
 hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
@@ -46,6 +46,10 @@ Plug 'HerringtonDarkholme/yats.vim' " syntax highlighting
 Plug 'Quramy/tsuquyomi' " client for TSServer
 
 call plug#end()
+
+" Ripgrep
+let g:rg_command="rg --vimgrep -C 2"
+let g:rg_highlight=1
 
 " NERDTree
 cnoreabbrev nt NERDTree
