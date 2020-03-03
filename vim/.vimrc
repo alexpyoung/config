@@ -19,11 +19,11 @@ set hlsearch " highlight matches with last search pattern
 
 set clipboard=unnamed " use the clipboard as the unnamed register
 
-autocmd BufWritePre * %s/\s\+$//e " trim trailing whitespace on save
+autocmd BufEnter * lcd %:p:h " set working directory to current file's directory
 
 " Highlight statusline of active window
-hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
-hi StatusLineNC ctermfg=249 guifg=#b2b2b2 ctermbg=237 guibg=#3a3a3a cterm=none gui=none
+hi StatusLine   ctermfg=15  ctermbg=239 cterm=bold gui=bold
+hi StatusLineNC ctermfg=249 ctermbg=235 cterm=none gui=none
 
 call plug#begin('~/.vim/vim-plug')
 
@@ -38,7 +38,7 @@ Plug 'jremmen/vim-ripgrep'
 " Git
 Plug 'tpope/vim-fugitive'
 
-" Syntax
+" Intellisense
 Plug 'vim-scripts/SyntaxComplete'
 
 " TypeScript
@@ -46,10 +46,6 @@ Plug 'HerringtonDarkholme/yats.vim' " syntax highlighting
 Plug 'Quramy/tsuquyomi' " client for TSServer
 
 call plug#end()
-
-" Ripgrep
-let g:rg_command="rg --vimgrep -C 2"
-let g:rg_highlight=1
 
 " NERDTree
 cnoreabbrev nt NERDTree
